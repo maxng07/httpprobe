@@ -25,7 +25,9 @@ To obtain the code, please refer to <a href="https://golang.org/pkg/crypto/tls/#
   URL using FQDN only including http or https, TLS requires host header and cannot use only IP Address without host header 
 ```
   
--f will save the output into a json file, result.json that can be used for other program for consumption. A good example of this is providing reports or the key/value can be used for making geo-routing decision.
+-f will save the output into a json file, result.json that can be used for other program for consumption. A good example of this is providing reports or the key/value can be used for making geo-routing decision. <br>
+
+Note: The duration readings stored in json is in microsecond, 1 millisecond is 1000 microseconds
 
 <h3>Caveats </h3>
 1. Testing has been done on using IP address instead of FQDN. For http request, IP address will work fine (no DNS lookup is performed), for https, httpprobe does not provide a Host Header or SNI, so TLS handshake will fail for most sites. For Https telemetry a FQDN is recommended. <br>
