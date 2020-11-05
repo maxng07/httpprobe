@@ -22,7 +22,7 @@ To obtain the code, please refer to <a href="https://golang.org/pkg/crypto/tls/#
   -v  enable verbosity to include more informations (RemoteServerIP, TLS Version, CipherSuite)
   -f  saving output to json file, the saved json file will be created and save as result.json
   -h  help menu
-  URL URL using FQDN only including http or https, TLS requires host header and cannot use only IP Address without host header 
+  URL using FQDN only including http or https, TLS requires host header and cannot use only IP Address without host header 
 ```
   
 -f will save the output into a json file, result.json that can be used for other program for consumption. A good example of this is providing reports or the key/value can be used for making geo-routing decision.
