@@ -1,7 +1,7 @@
 # Http Probe
 HTTP Probe uses GO <a href="https://blog.golang.org/http-tracing"> httptrace </a> module to provide telemetry to each event in a http lifecycle to measure readings for DNS lookup, TCP Connect, TLS Handshake, Time-to-First-Byte, Time-to-Last-Byte and Total Duration. 
 
-Event Readings Calculated includes
+Event Readings calculated includes
 1. DNS LookUp Duration 
 2. TCP Connect Duration
 3. TLS Handshake (if https)
@@ -27,5 +27,5 @@ Options:
 -f will save the output into a json file, result.json that can be used for other program for consumption. A good example of this is providing reports or the key/value can be used for making geo-routing decision.
 
 <h3>Caveats </h3>
-1. Testing has been done on using IP address instead of FQDN. For http request, IP address will work fine (no DNS lookup is performed), for https, httpprobe does not provide a Host Header or SNI, so TLS handshake will fail for most sites. For Https telemetry a FQDN is recommended.
+1. Testing has been done on using IP address instead of FQDN. For http request, IP address will work fine (no DNS lookup is performed), for https, httpprobe does not provide a Host Header or SNI, so TLS handshake will fail for most sites. For Https telemetry a FQDN is recommended. <br>
 2. Results has been compared with <a href="https://github.com/davecheney/httpstat/blob/master/main.go"> httpstat </a> another great telemetry program written in GO, curl and Firefox. Details can be found in the Wiki.
