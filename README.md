@@ -1,5 +1,5 @@
 # Http Probe
-HTTP Probe uses GO <a href="https://blog.golang.org/http-tracing"> httptrace </a> module to provide telemetry to each event in a http lifecycle to measure readings for DNS lookup, TCP Connect, TLS Handshake, Time-to-First-Byte, Time-to-Last-Byte and Total Duration. 
+HTTP Probe uses GO <a href="https://blog.golang.org/http-tracing"> httptrace </a> module to provide telemetry to each event in a Http GET request lifecycle to provide readings for DNS lookup, TCP Connect, TLS Handshake, Time-to-First-Byte, Time-to-Last-Byte and Total Duration. 
 
 Event Readings calculated includes
 1. DNS LookUp Duration 
