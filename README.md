@@ -13,7 +13,7 @@ If verbosity is enabled, it provides
 1. RemoteServerIP and Port
 2. TLS Version in decimal code
 3. CipherSuite in decimal code
-To obtain the code, please refer to <a href="https://golang.org/pkg/crypto/tls/#CipherSuiteName"> GO TLS </a> library 
+To obtain the coded version for CipherSuite, please refer to <a href="https://golang.org/pkg/crypto/tls/#CipherSuiteName"> GO TLS </a> library 
 
 <h2> Usage </h2>
 
