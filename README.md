@@ -42,6 +42,19 @@ Time To First byte: 179.039125ms
 Time to Last byte: 84.595µs
 End-to-End Duration: 859.744586ms
 ```
+
+```
+httpProbe -v https://sg-weather.maxng.net
+DNS lookup Duration: 1.117394ms
+TCP Connect Duration: 8.868334ms
+Remote ServerIP Connection Info: 104.18.16.160:443
+TLS Duration: 228.535567ms
+TLS Version: 772
+TLS CiperSuite: 4865
+Time To First byte: 51.151442ms
+Time to Last byte: 87.406µs
+End-to-End Duration: 290.573317ms
+```
 Note: The duration readings stored in json is in microsecond, 1 millisecond is 1000 microseconds
 
 <h3>Caveats </h3>
