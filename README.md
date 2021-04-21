@@ -12,7 +12,7 @@ Event Readings calculated includes
 If verbosity is enabled, it provides 
 1. RemoteServerIP and Port
 2. TLS Version in decimal code
-3. CipherSuite in decimal code
+3. CipherSuite in decimal code </br>
 To obtain the coded version for CipherSuite, please refer to <a href="https://golang.org/pkg/crypto/tls/#CipherSuiteName"> GO TLS </a> library 
 
 <h2> Usage </h2>
@@ -27,6 +27,21 @@ To obtain the coded version for CipherSuite, please refer to <a href="https://go
   
 -f will save the output into a json file, result.json that can be used for other program for consumption. A good example of this is providing reports or the key/value can be used for making geo-routing decision. <br>
 
+## Example
+```
+httpProbe https://www.maxng.net
+
+DNS lookup Duration: 81.95539ms
+TCP Connect Duration: 11.847007ms
+TLS Duration: 268.160327ms
+Time To First byte: 257.011358ms
+DNS lookup Duration: 44.369347ms
+TCP Connect Duration: 6.206105ms
+TLS Duration: 9.340945ms
+Time To First byte: 179.039125ms
+Time to Last byte: 84.595µs
+End-to-End Duration: 859.744586ms
+```
 Note: The duration readings stored in json is in microsecond, 1 millisecond is 1000 microseconds
 
 <h3>Caveats </h3>
