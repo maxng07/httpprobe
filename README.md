@@ -44,7 +44,7 @@ End-to-End Duration: 859.744586ms
 ```
 
 ```
-httpProbe -v https://sg-weather.maxng.net
+httpProbe -v https://www.maxng.net
 DNS lookup Duration: 1.117394ms
 TCP Connect Duration: 8.868334ms
 Remote ServerIP Connection Info: 104.18.16.160:443
