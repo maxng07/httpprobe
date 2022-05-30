@@ -57,6 +57,9 @@ End-to-End Duration: 290.573317ms
 ```
 Note: The duration readings stored in json is in microsecond, 1 millisecond is 1000 microseconds
 
+<h2> Latest Release </h2>
+`Rel 1.2 ` - fixed a bug where DNS Duration is not written to file when -f parameter is used
+
 <h3>Caveats </h3>
 1. Testing has not been done on using IP address instead of FQDN. For http request, IP address will work fine (no DNS lookup is performed), for https, httpprobe does not provide a Host Header or SNI, so TLS handshake will fail for most sites. For Https telemetry a FQDN is recommended. <br>
 2. Results have been compared with <a href="https://github.com/davecheney/httpstat/blob/master/main.go"> httpstat </a> another great telemetry program written in GO, cURL and Firefox browser. Details can be found in the Wiki.
